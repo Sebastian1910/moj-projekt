@@ -6,30 +6,15 @@
   padding: 0;
 }
 
-body {
-  font-family: "Domine", serif;
-  font-family: "Playfair Display", serif;
-  font-family: "Raleway", sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-family: "Silkscreen", sans-serif;
-  font-family: "Young Serif", serif;
+:root {
+  --color-gray: #434455;
+  --color-white: #ffffff;
+  --color-dark-grey: #2e2f42;
+  --color-blue: #4d5ae5;
+  --color-dark-blue: #404bbf;
+  --color-white-2: #f4f4fd;
+  --color-white-3: #e7e9fc;
 }
-lu {
-  display: flex;
-  justify-content: center;
-  gap: 70px;
-  text-align: center;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.nav-div {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
-  padding: 25px 0;
-  color: black;
+.container {
+  width: 428px;
 }
