@@ -89,11 +89,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
+  background-image: url(../images/image_home\ page.jpg);
 }
 
 .top {
@@ -975,7 +971,7 @@ ol {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Dark-bg@2x.jpg);
+      url(../images/image_home\ page.jpg);
   }
 }
 
