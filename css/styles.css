@@ -6,6 +6,12 @@
   padding: 0;
 }
 
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
 .modal {
   position: absolute;
   top: 50%;
