@@ -18,66 +18,49 @@
     <title>Index</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="red container">
+        <button contact-modal-open>Test Contacts</button>
+      </div>
+    </header>
 
-    <main></main>
+    <main>
+      <div class="blue container">
+        <button follow-modal-open>Test Follow</button>
+      </div>
+    </main>
 
-    <footer></footer>
+    <footer>
+      <div class="green container">
+        <button>Test Menu</button>
+      </div>
+    </footer>
 
     <!-- Modal1 Contact US-->
-
-    <div class="" contact-data-modal>
-      <button type="button" class="" contact-modal-close>
-        <svg width="8" height="8" class="svg-close">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <div>
-        <h2>Contact us</h2>
-        <p class="">
-          If you have any additional questions or you want to clarify something
-          before you make an order please fill in your contact details. We will
-          call you back.
-        </p>
-        <form>
-          <label class="" for="user-name"> Name </label>
-          <input
-            class=""
-            id="user-name"
-            name="user-name"
-            type="text"
-            placeholder="Your name"
-            required
-          />
-          <label class="" for="email"> Email </label>
-          <input
-            class=""
-            id="email"
-            name="email"
-            type="text"
-            placeholder="Your email"
-            required
-          />
-        </form>
-        <button class="" thank-modal-open type="submit">Send</button>
-      </div>
-    </div>
-    <!-- Modal2 Follow to our newsletter-->
-    <div class="" follow-data-modal>
-      <button type="button" class="" follow-modal-close>
-        <svg width="8" height="8" class="">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <div>
-        <img src="./images/1christie-kim-0IsBu45B3T8-unsplash 1.jpg" alt="" />
+    <div class="is-hidden backdrop" contact-data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" contact-modal-close>
+          <svg width="8" height="8" class="svg-close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
         <div>
-          <h2>Follow to our newsletter</h2>
+          <h2>Contact us</h2>
           <p class="">
-            Be the first to get exclusive offers and the latest news on our
-            product directly in your box.
+            If you have any additional questions or you want to clarify
+            something before you make an order please fill in your contact
+            details. We will call you back.
           </p>
           <form>
+            <label class="" for="user-name"> Name </label>
+            <input
+              class=""
+              id="user-name"
+              name="user-name"
+              type="text"
+              placeholder="Your name"
+              required
+            />
             <label class="" for="email"> Email </label>
             <input
               class=""
@@ -87,28 +70,68 @@
               placeholder="Your email"
               required
             />
-            <button class="" c-modal-open type="button">Subscribe</button>
+            <button type="button" class="" thank-modal-open type="submit">
+              Send
+            </button>
           </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal2 Follow to our newsletter-->
+    <div class="is-hidden backdrop" follow-data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" follow-modal-close>
+          <svg width="8" height="8" class="">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div>
+          <img src="" alt="" />
+          <div>
+            <h2>Follow to our newsletter</h2>
+            <p class="">
+              Be the first to get exclusive offers and the latest news on our
+              product directly in your box.
+            </p>
+            <form>
+              <label class="" for="email"> Email </label>
+              <input
+                class=""
+                id="email"
+                name="email"
+                type="text"
+                placeholder="Your email"
+                required
+              />
+              <button type="button-send" class="" follow-modal-close>
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Modal3 Thank you-->
-    <div class="" thank-data-modal>
-      <button type="button" class="" thank-modal-close>
-        <svg width="8" height="8" class="">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <div>
-        <svg>obraz</svg>
-      </div>
-      <div>
-        <h2>Thank you!</h2>
-        <p class="">
-          We have received your contact details and will reach you soon.
-        </p>
-        <button class="" type="submit">Continue</button>
+    <div class="is-hidden backdrop" thank-data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" thank-modal-close>
+          <svg width="8" height="8" class="">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div>
+          <svg>obraz</svg>
+        </div>
+        <div>
+          <h2>Thank you!</h2>
+          <p class="">
+            We have received your contact details and will reach you soon.
+          </p>
+          <form>
+            <button type="button-send" class="">Continue</button>
+          </form>
+        </div>
       </div>
     </div>
 
