@@ -84,6 +84,9 @@
   border-radius: 4px;
   border: 1px solid #d7d7d7;
 }
+.form-label:focus-within {
+  color: #ee620a;
+}
 .modal-text {
   padding-top: 14px;
   padding-bottom: 18px;
