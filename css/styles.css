@@ -5,6 +5,15 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --pink: #e86f54;
+  --pink-hover: #e25b41;
+  --pink-focus: #fa6f54;
+  --red: #e74a3b;
+  --green: #3cbc81;
+  --border: #d7d7d7;
+  --border-hover: #111111b2;
+}
 
 .link {
   text-decoration: none;
@@ -82,18 +91,18 @@
   padding-left: 12px;
   margin: 0 auto;
   border-radius: 4px;
-  border: 1px solid #d7d7d7;
+  border: 1px solid var(--border);
   outline: none;
 }
 .modal-input:hover {
-  border-color: rgba(17, 17, 17, 0.7);
+  border-color: var(--border-hover);
   cursor: pointer;
 }
 .modal-input:not(:placeholder-shown):required:valid:focus-within {
-  border-color: green;
+  border-color: var(--green);
 }
 .modal-input:not(:placeholder-shown):required:invalid {
-  border-color: red;
+  border-color: var(--red);
 }
 .modal-text {
   padding-top: 14px;
@@ -109,8 +118,31 @@
   padding-bottom: 24px;
 }
 .modal-button {
+  color: #fff;
+  text-align: center;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   width: 100%;
   height: 37px;
+  display: flex;
+  width: 240px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--pink);
+  cursor: pointer;
+  border: none;
+}
+.modal-button:hover {
+  background: var(--pink-hover);
+}
+.modal-button:focus {
+  background: var(--pink-focus);
+  box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.2);
 }
 
 .menu-container {
@@ -122,7 +154,7 @@
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #e86f54;
+  background-color: var(--pink);
   z-index: 999;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
