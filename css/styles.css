@@ -28,7 +28,6 @@
   transform: translate(-50%, -50%) scale(1);
   max-width: 272px;
   width: 95%;
-
   border-radius: 4px;
   background: #fcfcfc;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -120,7 +119,6 @@
 .modal-button {
   color: #fff;
   text-align: center;
-
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -128,7 +126,6 @@
   width: 100%;
   height: 37px;
   display: flex;
-
   padding: 10px 0px;
   justify-content: center;
   align-items: center;
@@ -139,6 +136,9 @@
 }
 .modal-button:hover {
   background: var(--pink-hover);
+}
+.svg-thank {
+  width: 300px;
 }
 .modal-button:focus {
   background: var(--pink-focus);
@@ -192,6 +192,7 @@
 }
 .modal-form-thank {
   padding-bottom: 32px;
+  width: -webkit-fill-available;
 }
 
 /* Tablet */
