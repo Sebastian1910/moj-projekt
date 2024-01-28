@@ -8,7 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/follow.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/thank.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -90,27 +93,30 @@
     </div>
     <!-- Modal2 Follow to our newsletter-->
     <div class="is-hidden backdrop" follow-data-modal>
-      <div class="modal">
+      <div class="modal-follow">
         <button type="button" class="close-btn" follow-modal-close>
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15 3L3 15M15 15L3 3L15 15Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
 </svg> 
         </button>
-        <div class="modal-center">
+        <div class="follow-desktop">
+         <div class="modal-img">
+          
+          </div>
+        <div class="modal-center-follow">
+         
           <div>
-          <img src="" alt="" />
-          <div>
-            <h2>Follow to our newsletter</h2>
-            <p class="">
+            <h2 class="modal-follow-h2">Follow to our newsletter</h2>
+            <p class="modal-follow-p">
               Be the first to get exclusive offers and the latest news on our
               product directly in your box.
             </p>
             <form>
-              <div class="modal-label">
-              <label class="modal-label" for="email"> Email </label>
               <div>
+              <label class="modal-label-follow" for="email"> Email </label>
+              <div class="modal-follow-div-label">
               <input
-                class="modal-input"
+                class="modal-input-follow"
                 id="email"
                 name="email"
                 type="email"
@@ -118,13 +124,14 @@
                 required
               />
               </div>
-              <button type="button-send" class="modal-button" follow-modal-close>
+              <button type="button-send" class="modal-button-follow" follow-modal-close>
                 Subscribe
               </button>
               </div>
             </form>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
