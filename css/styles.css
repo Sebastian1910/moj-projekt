@@ -1,17 +1,92 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* Resetowanie domyślnych stylów przeglądarki */
+* {
   margin: 0;
   padding: 0;
-}
-:root {
-  --pink: #e86f54;
-  --pink-hover: #e25b41;
-  --pink-focus: #fa6f54;
-  --red: #e74a3b;
-  --green: #3cbc81;
-  --border: #d7d7d7;
-  --border-hover: #111111b2;
+  box-sizing: border-box;
 }
 
+/* Ustawienie czcionki dla całej strony */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Nagłówek strony */
+header {
+  background-color: #3b3b3b;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+header .logo_container img {
+  max-width: 150px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Główna część strony */
+#main-content {
+  padding: 20px;
+}
+
+/* Sekcja portfolio */
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.et_pb_section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Stylizacja obrazów */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stopka strony */
+footer {
+  background-color: #3b3b3b;
+  color: #fff;
+  padding: 20px;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+footer p,
+footer a {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+footer a:hover {
+  color: #fff;
+}
